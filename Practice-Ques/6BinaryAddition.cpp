@@ -77,11 +77,11 @@ unsigned long binAddition(int num1, int num2)
             
             2. Iteration 2:
                 bit1 = 0, bit2 = 0, sum = 0.
-                carr = 0, sum = 0 , addition = 10
+                carr = 0, sum = 0 , addition = 01 
 
             3. Iteration 3:
                 bit1 = 1, bit2 = 1, sum = 2.
-                carr = 1, sum = 0 , addition = 100
+                carr = 1, sum = 0 , addition = 001
             
             4. (Carry = 1) Iteration 4:
                 bit1 = 0, bit2 = 0, sum = 1;
