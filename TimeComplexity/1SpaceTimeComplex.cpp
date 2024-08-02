@@ -41,7 +41,7 @@ void time_complexity_nested_loop()
 /* @result: The Above Function Represents: 
 
             1. Space Complexity: [end1 = 4 Bytes, num1 = 4 Bytes, (i) = 4 Bytes, (j) = 4 Bytes]
-            2. Space Complexity: [4(4) = 16.]       
+            2. Time Complexity: [4(4) = 16.]       
 */
 
 
@@ -60,6 +60,6 @@ void time_complexity_single_loop()
 }
 
 /* @result: The Above Function Has A Linear Time-Complexity!
-            Space Complexity: [(4 + 4 + 4) = 12]. [Constant: Space Complexity]
-            Time Complexity : O(big oh)(end1) Times -> Worst Case Complexity.
+            1. Space Complexity: [(4 + 4 + 4) = 12]. [Constant: Space Complexity]
+            2. Time Complexity : O(big oh)(end1) Times -> Worst Case Complexity.
 */
