@@ -1,0 +1,46 @@
+#!/bin/bash
+
+function help(){
+    echo "Usage: $0 [command]"
+    echo ""
+    echo "Commands:"
+    echo "make       : Builds the project"
+    echo "clean      : Cleans the build"
+    echo "help       : Displays this help message"
+}
+
+function check() {
+       if [ "$#" -eq 0 ]; then 
+              echo "No arguments"
+              help
+              exit 0 
+       fi
+}
+
+
+check "$@"
+make="$1"
+
+if [ "$make" == "make" ]; then
+	echo "Making All Files!!!"
+	make -C ./Basics/ -j 10
+	make -C ./Practice-Ques -j 10
+	make -C ./TimeComplexity -j 10
+
+elif [ "$make" == "clean" ]; then
+       echo "Cleaning Build!"              
+       make -C ./Basics/ clean
+       make -C ./Practice-Ques clean
+       make -C ./TimeComplexity clean
+
+elif [ "$make" == "help" ]; then
+       help
+
+else 
+       echo "Unkown Command: $make"
+       help
+fi
+
+
+echo "Finished Building/Cleaning-!"
+exit 0
