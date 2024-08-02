@@ -36,8 +36,9 @@ int printAddressArr(int* arr, int arrSize)
 
 
 /*
-    @brief: we're solving the Problem of maximum and minimum using Arrs!
-    @input: None.
+    @brief  : we're solving the Problem of maximum and minimum using Arrs!
+    @input  : None.
+    @return : None.
 */
 void problemSolving()
 {
