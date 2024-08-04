@@ -137,25 +137,6 @@ void bubbleSort(int *arr, int arrSize)
     }
 }
 
-/**
- * @brief: Sorts an array of integers in ascending order using the Insertion Sort algorithm.
- *
- * Insertion Sort is a simple comparison-based sorting algorithm that builds the final sorted array
- * one item at a time. It works similarly to the way you might sort playing cards in your hands.
- * The algorithm iterates through the array, and for each element, it places it in its correct position
- * in the already sorted part of the array.
- * 
- * The algorithm divides the array into a sorted and an unsorted region. It repeatedly takes the first 
- * unsorted element and inserts it into the sorted region at the correct position.
- *
- * @param arr: Pointer to the array of integers to be sorted.
- * @param arrSize: The number of elements in the array.
- *
- * @attention: This algorithm is efficient for small data sets and mostly sorted arrays.
- *             It has an average and worst-case time complexity of O(n^2).
- *             It is stable (does not change the relative order of elements with equal keys)
- *             and is in-place (requires only a constant amount of extra space).
- */
 
 /**
  * @brief Sorts an array of integers in ascending order using the Insertion Sort algorithm.
