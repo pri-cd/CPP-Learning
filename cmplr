@@ -26,12 +26,16 @@ if [ "$make" == "make" ]; then
 	make -C ./Basics/ -j 10
 	make -C ./Practice-Ques -j 10
 	make -C ./TimeComplexity -j 10
+       make -C ./Arrays -j 10
+
 
 elif [ "$make" == "clean" ]; then
        echo "Cleaning Build!"              
        make -C ./Basics/ clean
        make -C ./Practice-Ques clean
        make -C ./TimeComplexity clean
+       make -C ./Arrays clean
+       
 
 elif [ "$make" == "help" ]; then
        help

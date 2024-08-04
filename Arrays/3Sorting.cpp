@@ -5,16 +5,29 @@ using namespace std;
 void selectionSort(int *arr, int arrSize);
 void bubbleSort(int *arr, int arrSize);
 
-int main(int argc, char const *argv[])
-{
-    int arrSize = 10;
-    int arr[10] = {98, 54, 56, 23, 67, 12, 34, 89, 90, 34};
-    selectionSort(&arr[0], arrSize);
 
+
+void printArr(int *arr, int arrSize)
+{
     for (int i = 0; i < arrSize; i++)
     {
         cout << arr[i] << (i != (arrSize - 1) ? ", ": ". \n");
     }
+}
+
+int main(int argc, char const *argv[])
+{
+    int arrSize = 10;
+    int arr1[10] = {98, 54, 56, 23, 67, 12, 34, 89, 90, 34};
+    int arr2[10] = {98, 54, 56, 23, 67, 12, 34, 89, 90, 34};
+
+    selectionSort(&arr1[0], arrSize);
+    bubbleSort(&arr2[0], arrSize);
+
+
+    printArr(&arr1[0], arrSize);
+    printArr(&arr2[0], arrSize);
+    
     return 0;
 }
 
@@ -95,22 +108,24 @@ void bubbleSort(int *arr, int arrSize)
     for (int i = 0; i < arrSize; i++)
     {
         swapped = false; 
-        for (int j = 0; j < arrSize - i; j++)
+        for (int j = 0; j < arrSize - i -1; j++)
         {
             if (arr[j] > arr[j + 1])
             {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                swapped = true;
             }
         }
+
         // If no elements were swapped during the current pass,
         // it indicates that the array is already sorted. We can then exit the loop early
         // to avoid unnecessary further passes and improve efficiency.
         if (!swapped)
         {
-
             break;
         }
     }
 }
+
