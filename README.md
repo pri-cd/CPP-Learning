@@ -13,14 +13,6 @@
 ## :rocket: Projects
 
 - [Project 1](link-to-project-1): This Part Covers The Basics of C++.
-- [Project 2](link-to-project-2): Advanced Challenges in C++.
-- [Project 3](link-to-project-3): Work ---- In Progress
-
-## :page_facing_up: Code Samples
-
-- [Sample 1](link-to-sample-1): Hello World Program (C++).
-- [Sample 2](link-to-sample-2): File IO Handling.
-- [Sample 3](link-to-sample-3): Sockets & TCP/IP.
 
 ## :handshake: Contributing
 
